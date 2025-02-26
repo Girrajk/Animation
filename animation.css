@@ -1,0 +1,60 @@
+.box{
+    height: 50px;
+    width: 150px;
+    position: relative;
+    border: 2px groove black;
+    background-color: blue;
+    animation-name: an1;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+    /* animation-direction: alternate; */
+    /* animation-direction: reverse; */
+    /* animation-direction: alternate-reverse; */
+    /* animation-fill-mode: forwards; */
+    /* animation-timing-function: linear; */
+    /* animation-iteration-count: infinite;
+    animation-delay: 3s; */
+    animation: an1 4s linear 1s infinite alternate;
+
+}
+/* @keyframes an1{
+    from{
+        transform: translate(0px);
+    }
+    to{
+        transform: translate(100vw);
+    }
+} */
+ @keyframes an1{
+    0%{
+        position: relative;
+        top: 0%;
+        left: 0%;
+
+    }
+    
+    25% {
+        background-color: blue;
+        
+
+    }
+    50% {
+       background-color: chartreuse;
+       
+    }
+    75% {
+        background-color: aqua;
+        
+    }
+    100% {
+        background-color: black;
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        position: relative;
+        top: 250px;
+        left: 500px;
+       
+    }
+
+ }
