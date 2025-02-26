@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.solar-system {
+  position: relative;
+  width: 600px;
+  height: 600px;
+}
+
+.sun {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.planet {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
+}
+
+.orbit-1 {
+  width: 200px;
+  height: 200px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.orbit-2 {
+  width: 250px;
+  height: 250px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.orbit-3 {
+  width: 300px;
+  height: 300px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.orbit-4 {
+  width: 350px;
+  height: 350px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.orbit-5 {
+  width: 400px;
+  height: 400px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+/* Planets */
+.planet-1 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: gray;
+  border-radius: 50%;
+}
+
+.planet-2 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.planet-3 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: blue;
+  border-radius: 50%;
+}
+
+.planet-4 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 45px;
+  height: 45px;
+  background-color: orange;
+  border-radius: 50%;
+}
+
+.planet-5 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 55px;
+  height: 55px;
+  background-color: green;
+  border-radius: 50%;
+}
+
+/* Animating the orbits */
+@keyframes orbit1 {
+  0% { transform: rotate(0deg) translateX(200px) rotate(0deg); }
+  100% { transform: rotate(360deg) translateX(200px) rotate(-360deg); }
+}
+
+@keyframes orbit2 {
+  0% { transform: rotate(0deg) translateX(250px) rotate(0deg); }
+  100% { transform: rotate(360deg) translateX(250px) rotate(-360deg); }
+}
+
+@keyframes orbit3 {
+  0% { transform: rotate(0deg) translateX(300px) rotate(0deg); }
+  100% { transform: rotate(360deg) translateX(300px) rotate(-360deg); }
+}
+
+@keyframes orbit4 {
+  0% { transform: rotate(0deg) translateX(350px) rotate(0deg); }
+  100% { transform: rotate(360deg) translateX(350px) rotate(-360deg); }
+}
+
+@keyframes orbit5 {
+  0% { transform: rotate(0deg) translateX(400px) rotate(0deg); }
+  100% { transform: rotate(360deg) translateX(400px) rotate(-360deg); }
+}
+
+/* Apply animations to planets */
+.orbit-1 {
+  animation: orbit1 10s linear infinite;
+}
+
+.orbit-2 {
+  animation: orbit2 15s linear infinite;
+}
+
+.orbit-3 {
+  animation: orbit3 20s linear infinite;
+}
+
+.orbit-4 {
+  animation: orbit4 25s linear infinite;
+}
+
+.orbit-5 {
+  animation: orbit5 30s linear infinite;
+}

@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+   background-image: url(./imgvillage.jpg);
+    background-size: cover;
+    
+    
+}
+.sun {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 300px;
+    background-color: rgb(255, 130, 0);
+    box-shadow: 0px 0px 50px rgb(255, 130, 0);
+    border-radius: 50%;
+    animation: sunAnimation 5s linear 2s infinite;
+}
+ @keyframes sunAnimation{
+    0%{
+        position: relative;
+        top: 30;
+        left: 0;
+        background-color: rgb(255, 130, 0);
+    }
+    25%{
+        /* background-color: rgb(9, 196, 109); */
+        position: relative;
+        background-color: rgb(240, 165, 0);
+        /* margin-top: 200px; */
+        top: 20vh;
+        left: 20vw;
+    }
+    50%{
+        position: relative;
+        /* margin-top: 200px; */
+        top: 10vh;
+        left: 48vw;
+        background-color: rgb(230, 200, 0);
+    }
+    75%{
+        position: relative;
+        /* margin-top: 200px; */
+        top: 20vh;
+        left: 75vw;
+        background-color: rgb(240, 165, 0);
+    }
+    100%{
+        top: 30;
+        left: 93vw;
+        background-color: rgb(255, 130, 0);
+       
+    }
+}  
